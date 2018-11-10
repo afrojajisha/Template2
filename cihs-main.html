@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="./js/utility.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="ism/css/my-slider.css"/>
+<script src="ism/js/ism-2.2.min.js"></script>
+
+<!--<script type="text/javascript" src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyANd5Utib7NwoqfP2lPTVWTwfVzLgmPShs"></script>
+<script>
+
+        function loadMap() {
+			
+            var mapOptions = {
+               center:new google.maps.LatLng(22.3569, 91.7832), zoom:12,
+               mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+				
+            var map = new google.maps.Map(document.getElementById("sample"),mapOptions);
+         }
+      </script>-->
+      
+      
+<style> 
+			#content-body 
+					{
+						margin: 0px auto;
+						background-image: url(background.jpg);
+						background-repeat: repeat;
+						width:100%;
+						height:100%;
+					}
+			#header
+					{
+						margin:0px auto 2px auto;
+						width:1000px;
+						height:205px;
+						background:#383838;
+						overflow:hidden;						
+					}
+			#header-logo
+				{
+				margin:0px auto 0px auto;
+				
+				float:left;
+				background:#383838; 
+				width:150px; 
+				height:197px;
+				
+				}
+					
+			#header-text
+					{
+						margin:0px auto auto 2px;
+						float:left;
+						width:542px;
+						height:200px;
+						
+						background-color:#383838;
+						
+						
+					}
+			#school-name
+			      {
+				  padding-top:52px;
+				  }
+			#school-font-style
+					{
+					font-weight:bold;
+					font-size:38px;
+					font-family:Arial;
+					color:white;
+					
+					}
+			#header-left
+					{
+					margin:0px auto;
+					background-color:#383838;
+					width:304px;
+					height:200px;
+					display:inline;
+					float:right;
+					
+					}
+			 .header-left-phone
+					{
+					margin-top:2px;
+					
+					
+					}
+			.phone-text
+					{
+					padding: px;
+					margin-bottom:5px;
+					color:#fff; 
+					margin: 
+					font-weight:bold;
+					font-family:Segoe UI Semibold;
+					font-size:13px;
+					list-style-type:none;
+					display:inline;
+					}
+				#topmenu
+					{
+						margin:0px auto;
+						width:1000px;
+						height:60px;
+						background: #e8e8e8;
+				
+				}
+				
+				#topmenu ul
+				{ 
+				padding:0; 
+				list-style:none; 
+				margin: 0 px;
+						} 
+
+				#topmenu ul li{ 
+					margin:0; 
+					padding:14px 12px;
+					position:relative;
+					height:20px;
+					line-height:20px;
+					
+
+						}
+						
+						/*2nd tail - 2nd submenu*/
+						
+						#topmenu ul li ul 											
+						{
+						margin:8px 0 0 0;
+						border:4px solid #eb8206;
+						border-radius: 5px;
+						background-color: #FFFFFF;
+						color: #5b5959;
+						z-index: 100;
+						border-bottom:1px solid orange;
+						border-top:1px solid orange;
+						
+						}
+						#topmenu ul li a{
+						text-decoration:none;
+						 font-family: segoe UI semibold;
+						 font-size: 16px;
+						 color: #5b5959;
+						
+						 }
+						
+						#topmenu > ul > li { 
+						float: left; height:30px; 
+						line-height:30px; 
+						background-color: #e8e8e8;
+						color: #5b5959;
+						
+						} 
+						#topmenu li > ul{ 
+						visibility:hidden; 
+						width:400px; 
+						position: absolute; 
+						top:0px; 
+						left:200px; 
+						border-left:1px solid #000; 
+						} 
+						#topmenu > ul > li > ul { top:50px; left:0; width:300px; height:200px; } 
+						
+						#topmenu  ul li  ul  li  ul{ position:absolute;top:-6px; left:202px; width:300px; height:199px; }
+						#topmenu  ul  li ul li  li ul{ position:absolute;top:-10px; left:202px; width:300px; height:199px; } 
+						
+						/*1st horizontal menu */
+						
+						#topmenu li:hover { background-color:#fba620; color:white; border-radius: 6px; border: 2px solid #9a9895; cursor:pointer; color:#FFFFFF;}
+						
+						/*3rd tail-3rd submenu*/
+						
+						#topmenu ul li ul li ul li:hover {background-color:#FFF;  cursor:pointer; border: 0px solid #fff;}
+
+						#topmenu li:hover > ul{ visibility:visible; width:200px; color:#ffffff; height:auto; } 
+						
+						/* 2nd tail- 2nd submenu hover*/
+						
+						#topmenu ul li ul li:hover					
+						{
+						color:#FFFFFF; background-color:fcd47d;  border-radius:3px; border:2px solid #eb8206; font-size:5px;
+
+				} 
+				
+		/*#topmenu
+					{
+						margin:0px auto;
+						width:1000px;
+						height:70px;
+						background: #e8e8e8;
+						
+					}
+			ul#topmenu
+					{
+						list-style-type: none;
+						margin: 0;
+						padding: 0;
+						overflow: ;
+						background-color:;
+					}
+
+			ul#topmenu	li {
+						float: left;
+						margin: 0 0 0 15px;
+					}
+
+			ul#topmenu	li a {
+						display: block;
+						color: #5b5959;
+						text-align: center;
+						padding: 25px 19px;
+						text-decoration: none;
+						font-size:18px;
+						font-family: segoe UI semibold;
+						
+					}
+
+			ul#topmenu	li a:hover:not(.active) {
+						background-color: orange;
+					}
+
+			ul#topmenu	.active {
+						background-color: #ccc;
+					}
+			ul#topmenu sub1,sub2
+					{
+					list-style-type:none;
+					
+					}
+			ul#topmenu  sub1 li
+			
+					{
+					border:5px solid #407ec1;
+        background-color: #FFFFFF;
+        color: #000000;
+        z-index: 100;
+					}*/
+					
+			/*#slider
+					{
+						margin:0px auto;
+						width:1000px;
+						height:300px;
+						background:url(girl-1.png);
+					}
+			#image-opacity {margin-top:; margin:-40px auto auto auto; width:1000px; height:40px; opacity:0.2; background:black;}
+			#slider-tab
+					{
+						margin:-85px auto 0px auto;
+						
+						width:948px;
+						height:85px;
+						background:pink;
+						
+					}*/
+			.slide { width: 1000px; height:300px; margin: auto; padding-top:3px ; }
+			.slide .ism-slider { margin-left: auto; height:300px; margin-right: auto; }
+			#box-1
+					{width:158px;
+					height:85px;
+					background:green;}
+			#box-2
+					{width:158px;
+					height:85px;
+					background:cyan;
+					margin-left:158px;
+					display:inline;
+					}
+					
+			#wisdom
+					{
+						width:1000px;
+						height:60px;
+						margin:0px auto;
+						background:#34495e;
+					}
+			#mid-panel
+					{
+						width:1000px;
+						height:400px;
+						background:#fff;
+						margin:0px auto 10px auto;
+						overflow:hidden;
+						
+						
+					}
+			#mid-panel-left
+					
+					{
+						margin:0px ;
+						width:200px;
+						height:;
+						float:left;
+						background:#d39a02;
+						
+					}
+					
+			#main-menu {margin:1px; padding:5px 2px; width:198px; height:px; border-bottom: 3px solid #d35502; background:orange;}
+			#main-menu-text {color:#fff; margin: 25px 0 0 25px; font-size:20px;  font-weight:bold; font-family:segoe ui; font-variant:small-caps; }
+			#main-menu-text:hover {background:#7cfb27; width:198px; height:200px;}		
+			
+			#mid-left ul 
+			{list-style-type: none;
+				padding: 0px;
+				margin: 0px; 
+			}
+			#mid-left ul li
+			{
+			
+			padding: 0px;
+			margin-top: 1px;
+			text-decoration: none;
+			
+
+			}
+			
+			#mid-left ul li a 
+			{ 
+				color: white;font-size: 15px;
+				font-weight: bold;
+				font-family:segoe ui semibold;
+				display: block;	
+				padding: 8px 8px 8px 45px;
+				text-decoration: none;	
+				border-bottom: 1px solid #dadada;}
+	
+	#mid-left ul li:hover {background:#d3704e;}
+			#mid-left ul li a:hover {color:#fae42d;}
+			
+			
+			#mid-panel-middle
+					{
+					margin: 0px auto auto 5px auto;
+					width:500px;
+					height:400px;
+					float:left;
+					background:#fff;
+					
+					}
+			#mid-panel-right
+					{
+						margin:0px auto 5px auto;
+						width:300px;
+						height:320px;
+						float:right;
+						background:#fff;
+							
+					}
+					
+			#virtual-classroom
+			
+					{
+						
+						margin:3px auto;
+						width:1000px;
+						height:260px;
+						background:url(img/learn.png);
+						color:#fff; font-family:calibri;  font-weight:semi bold;
+						
+					}
+			#virtual-classroom-left
+					{
+						
+						margin:3px auto;
+						width:600px;
+						height:260px;
+						float:left;
+						background:url(learn.png);
+						
+					}
+			#virtual-classroom-right
+					{
+						
+						margin:3px auto;
+						width:400px;
+						height:255px;
+						float:right;
+						background:orange;
+						
+					}
+			.virtual-title1{margin-left:110px; display:inline-block; margin-top:10px; font-size:26px;}	
+			.virtual-title2{margin-left:155px; display:inline-block; margin-top:5px; font-size:26px;}	
+			.virtual-title3{margin-left:88px; display:inline-block; margin-top:5px; font-size:26px;}	
+			
+             a.buttonStudy  {
+					clear: both;
+					
+					-webkit-border-radius:3px;
+					-moz-border-radius:3px;
+					 border-radius:3px;
+							
+					/*-webkit-box-shadow:0 4px 5px rgba(0,0,0,.3);
+					-moz-box-shadow:0 4px 5px rgba(0,0,0,.3);
+					 box-shadow:0 4px 5px rgba(0,0,0,.3);*/
+					 border-bottom: 3px solid #f25d09;        
+					display: inline-block !important;
+					font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+					height: 35px;
+					margin: 15px auto auto 140px ;
+					padding:0px;
+					position: relative;
+					text-decoration: none;
+					text-shadow: 0 1px 1px rgba(255,255,255,.35);
+					width: 142px; }   
+			
+			a.buttonStudy:hover {background:#b05521;} 
+			a.buttonStudy 
+					{
+					background: #f27935;
+					background: -webkit-gradient(linear, 0 0, 0 0, from(#f27935), to(#f07e3e));
+					background: -moz-linear-gradient(#f27935, #f07e3e);
+					background: linear-gradient(#f27935, #f07e3e);
+					border-top: 1px solid #fbbad3;
+					color: rgba(74,36,49,.9); }
+					
+			a.buttonStudy:active {
+					background: #f27935;
+					background: -webkit-gradient(linear, 0 0, 0 0, from(#f27935), to(#F98CB6));
+					background: -moz-linear-gradient(#f27935, #F98CB6);
+					background: linear-gradient(#f27935, #F98CB6); }
+			.icons_d {
+					background:url('book-logo.jpg') no-reapet;
+					bottom: 5px;
+					display: block;
+					height: 26px;
+					position: absolute;
+					left: 5px;
+					width: 25px; }
+			
+			#academic-event
+					{
+						margin:25px auto 0px auto;
+						width:1000px;
+						height:350px;
+						background:#fff;
+						
+						
+					}
+			.academic-event-box1 {width:235px; height:290px; border:px solid #ccc; float:left; margin-left:6px;}
+			.academic-event-box2 {width:235px; height:290px; border:1px solid #ccc;  margin-left:9px; float:left;}
+			
+			
+			a.buttonMore {
+					clear: both;
+					
+					-webkit-border-radius:3px;
+					-moz-border-radius:3px;
+					 border-radius:3px;
+					background:#018c3b;			
+					border-bottom: 4px solid #006028;        
+					display: inline-block !important;
+					font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+					height: 25px;
+					margin: 15px 0px 0px 15px ;
+					padding:0px;
+					position: relative;
+					text-shadow: 0 1px 1px rgba(255,255,255,.35);
+					width: 80px; }
+			
+			a.buttonMore {text-decoration: none; color:#fff;  font-family:calibri; display:inline-block;  left:5px;}
+			a.buttonMore:hover {background:#1cd347;}		
+			
+			
+			a.buttonMoreBlue {
+					clear: both;
+					
+					-webkit-border-radius:3px;
+					-moz-border-radius:3px;
+					 border-radius:3px;
+					background:#0088c8;			
+					border-bottom: 4px solid #00557d;        
+					display: inline-block !important;
+					font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+					height: 25px;
+					margin: 15px 0px 0px 15px ;
+					padding:0px;
+					position: relative;
+					text-shadow: 0 1px 1px rgba(255,255,255,.35);
+					width: 80px; }
+			
+			a.buttonMoreBlue {text-decoration: none; color:#fff;  font-family:calibri; display:inline-block;  left:5px;}
+			a.buttonMoreBlue:hover {background:#117bad;}		
+			
+			
+			#online-payment-img
+					{
+						margin:15px auto;
+						width:1000px;
+						height:200px;
+						background:url(img/online-payment.png);
+						
+					}
+			#online-mcq
+					{
+						margin:5px auto;
+						width:1000px;
+						height:350px;
+						background: #fff;
+					
+					}
+			
+			#online-mcq-left
+					{
+					margin:5px auto auto auto;
+					width:650px;
+					height:350;
+					background: ;
+					float:left;
+					
+					}
+			#online-mcq-right
+					{
+					margin:5px 0 0 0;
+					width:350px;
+					height:350;
+					background: ;
+					float:right;
+					
+					
+					}
+			#newsletter{margin:5px; width:321px; height:325px; background:#485052;}
+						
+			#web-portal-add
+					{
+						margin: 5px auto;
+						width:1000px;
+						height:90px;
+						background:url(img/web-portal-add.png)
+						
+					}
+			#footer
+					{
+						margin:0px auto;
+						width:1000px;
+						height:300px;
+						background:#383838;
+					}
+			#footer-first-sec
+					{
+						margin:0px auto;
+						width:250px;
+						height:300px;
+						background:#262626;
+						float:left;
+					}
+			#footer-second-sec
+					{
+						margin:0px auto;
+						width:250px;
+						height:300px;
+						background:#262626;
+						float:left;
+					}
+			#footer-third-sec
+					{
+						margin:0px auto;
+						width:250px;
+						height:300px;
+						background:#262626;
+						float:left;
+					}
+					
+			#footer-fourth-sec
+					{
+						margin:0px auto;
+						width:250px;
+						height:300px;
+						background:#262626;
+						float:right;
+					}
+			#footer-boxImg1 {border:1px solid #ccc; width:90px; height:85px; background:skyblue; float:left; margin-top:5px;}
+			#footer-boxImg1:hover {border:3px solid #c7b7b7; width:80px; height:80px;}
+			#footer-border
+					
+					{
+						margin:0px auto;
+						width:1000px;
+						height:60px;
+						background:#000;
+						
+						
+					}
+			#footer-border-left
+					{
+						margin:0px auto;
+						width:500px;
+						height:60px;
+						background:#171717;
+						float:left;
+					}
+			#footer-border-right
+					{
+						margin:0px auto;
+						width:500px;
+						height:60px;
+						background:#171717;
+						float:right;
+					}
+					
+			#fb {float:left; margin-top:8px; margin-left:250px;}
+			#fb:hover {background:url(img/facebook_square.png); background-size:cover; 
+					-ms-transform: scale(1.1); /* IE 9 */
+					-webkit-transform: scale(1.1); /* Safari 3-8 */
+					transform: scale(1.1);  }
+			#twitter {float:left; margin-top:8px; margin-left:5px;}
+			#twitter:hover { -ms-transform: scale(1.1); /* IE 9 */ -webkit-transform: scale(1.1); /* Safari 3-8 */ transform: scale(1.1);}
+			#linkdin {float:left; margin-top:8px; margin-left:5px;}
+			#linkdin:hover { -ms-transform: scale(1.1); /* IE 9 */ -webkit-transform: scale(1.1); /* Safari 3-8 */ transform: scale(1.1);}
+			#skype {float:left; margin-top:8px; margin-left:5px;}
+			#skype:hover { -ms-transform: scale(1.1); /* IE 9 */ -webkit-transform: scale(1.1); /* Safari 3-8 */ transform: scale(1.1);}
+			#message {float:left; margin-top:8px; margin-left:5px;}
+			#message:hover { -ms-transform: scale(1.1); /* IE 9 */ -webkit-transform: scale(1.1); /* Safari 3-8 */ transform: scale(1.1);}
+			
+			#map { height:200px;}
+					
+</style>
+</head>
+
+<body>
+
+
+
+<div>
+
+<div id="content-body">
+	<div id="header">
+			<div id="header-logo"><img src ="img/ideal-logo.jpg" style="padding-top:35px; padding-left:15px;" ></div>
+				<div id="header-text"><div id="school-name"><span id="school-font-style" >Chittagong Ideal High School</span></div></div>
+					<div id ="header-left" >
+						<div class="header-left-phone"><img src="img/phone1.png" width="25" height="25" >
+							<span class="phone-text" ><a href="" style="text-decoration:none; color:#fff;">Need Information ? Call us : 0123456789</a></span>
+								
+								<form action="demo_form.asp">
+								<table style="margin-left:40px;  color:#fff; margin-top:8px; font-weight:; font-family: segoe UI semibold;">
+									<tr>
+										<td style="text-align:right;">USER ID </td>
+										<td style="text-align:left;"><input type="text" name="FirstName" placeholder="USER ID" value=""><br></td></tr>
+									<tr>
+										<td >PASSWORD </td>
+										<td ><input type="text" placeholder="PW" name="LastName" value=""><br></td>
+									</tr>
+								</table>
+								
+								<table style="margin-left:130px; padding-bottom:8px; margin-top:8px;"><tr><td><input type="submit" value="submit"></td>
+								<td><input type="reset" value="reset"></td></tr>
+								
+								</table>
+								<span class="phone-text" style=" color:#fff; margin-left:130px; margin-top:-5px; ">Forgot Password?</span>
+								</form>
+								<!--<form name="subscriberForm" id="subscriberForm" method="post" action="" class="subscriberForm">
+                                    <table>
+                                        <tbody><tr>
+                                            <td colspan="2"><input placeholder="Full Name" size="40" id="fullName" name="fullName" style="width: 98%;" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input placeholder="Mobile" size="10" id="mobile" name="mobile" type="text"></td>
+                                            <td style="text-align: right;"><input placeholder="E-mail" size="10" id="email" name="email" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" style="text-align: center;"><input style="width: 80px;" class="subscriber-button" value="Subscriber" name="subs" id="subs" type="submit"></td>
+                                        </tr>
+                                    </tbody></table>
+                                </form>-->
+						</div>
+							<div></div>
+  <!--<input type="submit" value="Submit form">-->
+			
+</form></div>	
+	</div><!--nav start here -->
+		<div id="topmenu">
+		
+                    <ul id="topmenu"> <li><a>HOME</a></li>
+                        <li><a >ABOUT</a></li>
+                        <li><a>MANAGEMENT</a>
+                            <ul>
+                                <li><a>CHAIRMAN MESSAGE</a>
+                                    <ul>
+                                        <li>abc</li>
+                                    </ul>
+                                </li>
+                                <li><a>PRINCIPAL MESSAGE</a>
+                                <ul>
+                                        <li> def<!--<img src="image/submenu.jpg" width="98%" height="auto"/>--></li>
+                                    </ul>
+                                </li>
+                                <li><a>GOVERNING BOARD</a></li>
+                                <li><a>DEPARTMENT HEAD</a></li>
+                                <li><a>COORDINATOR</a>
+								  <!--<li><a>COORDINATOR</a>
+								    <li><a>COORDINATOR</a>-->
+                                <ul>
+                                        <li><!--<img src="image/submenu.jpg" width="98%" height="auto"/>--></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a>ACADEMIC</a></li>
+                        <li><a>ADMISSION</a></li>
+                        <li><a>PHOTO</a></li>
+                        <li><a>DOWNLOADS</a></li>
+                        <li><a>FEEDBACK</a></li>
+                        <li><a>CONTACT US</a></li>
+                    </ul>
+			<!--<ul id="">
+			  <li><a class="active" href="#home">Home</a></li>
+			  <li><a href="#news">News</a>
+				<ul >
+					<li><a href="#contact">Contact</a>
+							<li><a href="#contact">Contact</a>
+							<li><a href="#contact">Contact</a>
+				</ul>
+					</li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
+				
+				</ul>
+			  </li>
+			  <li><a href="#contact">Contact</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li><a  href="#home">Downloads</a></li>
+			  <li><a href="#news">News</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			  <li><a href="#about">About</a></li>
+			</ul>-->
+		</div>
+		<!-- slide starts-->
+		<div class="slide">
+			<div class="ism-slider" id="my-slider">
+  <ol>
+  <li>
+      <img src="ism/image/slides/girl-1.png">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+      <li>
+      <img src="ism/image/slides/flower-729514_1280.jpg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="ism/image/slides/beautiful-701678_1280.jpg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+    <li>
+      <img src="ism/image/slides/summer-192179_1280.jpg">
+      <div class="ism-caption ism-caption-0">My slide caption text</div>
+    </li>
+  
+  </ol>
+</div>
+		</div>
+		<!--<div id="image-opacity"></div>-->
+	<!--<div id="slider-tab">
+		<!--<div id="box-1"></div>
+	    <div id="box-2"></div>-->
+		<!--<table style="width:948px; height:85px; cell-padding:0px; border-collapse:collapse;">
+			<tr>
+				<td style="background:#079c58; width:158px; color:#ffffff; text-align:center; font-family: Arial; font-weight:bold; font-size:16px;"><a href="" style="text-decoration:none; color:#fff;">HOME</a></td>
+				<td style="background:#1aabdb; width:158px; color:#ffffff; text-align:center; font-family: Arial; font-weight:bold; font-size:16px;"><a href="" style="text-decoration:none; color:#fff;">HOME</a></td>
+				<td style="background:orange; width:158px; color:#ffffff; text-align:center; font-family: Arial; font-weight:bold; font-size:16px;"><a href="" style="text-decoration:none; color:#fff;">HOME</a></td>
+				<td style="background:#108364; width:158px; color:#ffffff; text-align:center; font-family: Arial; font-weight:bold; font-size:16px;"><a href="" style="text-decoration:none; color:#fff;">HOME</a></td>
+				<td style="background:red; width:158px; color:#ffffff; text-align:center; font-family: Arial; font-weight:bold; font-size:16px;"><a href="" style="text-decoration:none; color:#fff;">HOME</a></td>
+				
+			
+			
+			
+			</tr>
+		</table>-->
+	
+	<!--</div>-->
+	<div id="wisdom"> <p style=" display:inline-block; margin-left:50px; color:#fff; font-size:20px; font-family:monotype corsiva;  font-weight:;">"Honesty is the first chapter in the book of wisdom."  Thomas Jefferson</p>
+
+
+	
+	</div>
+		<!-- mid panel starts here-->
+	<div id="mid-panel">
+	<div id="mid-panel-left">
+		<div id="main-menu"> <span id="main-menu-text">Main Menu</span></div>
+		<div id="mid-left">
+		<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Feedback</a></li>
+					<li><a href="#">Admission</a></li>
+					<li><a href="#">Admission</a></li>
+					<li><a href="#">Admission</a></li>
+					<li><a href="#">Feedback</a></li>
+					<li><a href="#">Feedback</a></li>
+					
+				</ul>
+	</div>
+	</div>
+	<div id="mid-panel-middle">
+		<p style="margin-left:8px; margin-top:10px; color:#807b7b; font-family: Calibri; font-size:28px; font-weight:">Welcome to Our School</p>
+		<div style="width:150px; border:2.5px solid #4bea3f; margin-left:15px; margin-top:-20px;"></div>
+		<div style="width:470px; border-bottom:1px solid #ccc; margin-left:15px; margin-top:px;"></div>
+		<div style="margin-top:10px; ">
+			<img src="img/girl-1.png" style="float:left; width:200px; height:150px; margin-left:10px; margin-right:5px; border-radius:4px;">
+			<p style="margin-left:15px; margin-right:18px; text-align:justify;">
+			Chittagong Ideal High School (CIHS) is an educational institution in Chittagong, Bangladesh. It was established on 1998. It is located in the center of Chittagong. More than two Hundred students take their Secondary School Certificates every year from the institution.
+
+The school primarily started in a rented 4 storied building and 1 year later it rented another building beside the previous one. Finally the school built their own 10 storied building which was fully equipped with all necessary facilities. In 2012 the Ideal Trust started it higher Secondary (college section).
+		</div>
+	</div>
+	
+	<div id="mid-panel-right">
+			<p style="margin-top:5px; font-family:calibri; font-weight;bold; font-size:24px; color:#656765; margin-left:8px; ">Academic Notice</p>
+	<div style="width:100px; border:2.5px solid #16a2e3; margin-left:7px; margin-top:-20px;"></div>
+		<div style="width:230px; border-bottom:1px solid #ccc; margin-left:7px; margin-top:px;"></div>
+		<p style="margin-left:5px; color:#656765; font-family:calibri;  font-size:18px;">Preliminary Result Notice<br>
+		
+		<span style="margin-left:5px; color:#868787; font-family:calibri;   font-size:15px;">29th March, 2017</span></p>
+		<div style="width:210px; border-bottom:.5px solid #ccc; margin-left:5px; margin-top:px;"></div>
+		<p style="margin-left:5px; color:#656765; font-family:calibri;  font-size:18px;">Preliminary Result Notice<br>
+		
+		<span style="margin-left:5px; color:#868787; font-family:calibri;   font-size:15px;">29th March, 2017</span></p>
+		<div style="width:210px; border-bottom:.5px solid #ccc; margin-left:5px; margin-top:px;"></div>
+		<p style="margin-left:5px; color:#656765; font-family:calibri;  font-size:18px;">Preliminary Result Notice<br>
+		
+		<span style="margin-left:5px; color:#868787; font-family:calibri;   font-size:15px;">29th March, 2017</span></p>
+		<div style="width:210px; border-bottom:.5px solid #ccc; margin-left:5px; margin-top:px;"></div>
+		<p style="margin-left:5px; color:#656765; font-family:calibri;  font-size:18px;">Preliminary Result Notice<br>
+		
+		<span style="margin-left:5px; color:#868787; font-family:calibri;   font-size:15px;">29th March, 2017</span></p>
+		<div style="width:210px; border-bottom:.5px solid #ccc; margin-left:5px; margin-top:px;"></div>
+		
+	
+	</div>
+	</div>
+	<div id="virtual-classroom">
+		<div id="virtual-classroom-left"></div>
+		<div id="virtual-classroom-right" style="">
+		<span class="virtual-title1" style="">LEARN THE WAY</span><br><span class="virtual-title2">TO THE</span>
+		<br/><span class="virtual-title3">VIRTUAL CLASSROOM </span>
+			<a href="https://www.youtube.com/watch?v=YBu-eQfSygU" class="buttonStudy ">
+			<span  style="background-color:#f25d09; display:inline-block; width:35px; height:37px; margin-bottom:-2px; margin-left:0px; border-radius:2px;">
+				</span>
+				<span class="icons_d StudyButton"><img width="25" src="img/book-logo.jpg"></span>
+			<span style=" color:#fff; display:inline-block; position:relative; top:-12px; left:11px;">STUDY NOW</span>
+			</a>
+	
+		
+		</div>
+		
+	
+	
+	
+	
+	
+	</div>
+		
+		
+	
+	
+	<div id="academic-event">
+		<p style="margin-left:8px; margin-top:10px; color:#807b7b; font-family: Calibri; font-size:25px; font-weight:">Academic Events</p>
+		<div style="width:120px; border:2.5px solid orange; margin-left:px; margin-top:-20px;"></div>
+		<div style="width:1000px; border-bottom:1px solid #ccc; margin-left:px; margin-top:px;"></div>
+		
+		<div style="margin-top:18px;">
+		
+		<div class="academic-event-box1" style="   " >
+			<img src="img/academic-event-1.png" style="width:235px; height:140px;">
+			<div style="background:#262626; height:40px; margin-top:-5px;">
+				<span style="color:#fff; font-weight:semi-bold; display:block; margin-left:40px; font-family:calibri; padding-top:10px;">ACADEMIC SESSION VI</span>
+				</div>
+			
+				<div style="width:160px; height:110px; background-color:#26a65b; float:left;">
+				<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/clock-t.png" width="15" ></span>
+				<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+				8.30am to 1.00pm</span>
+				<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/location-2.png" width="15" ></span>
+				<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+				CIHS </span> 
+				<div> <a href="" class="buttonMore"><span style="position:relative; bottom:5px; left:13px; ">More Info</span></a></div>
+				
+				
+				
+				
+					
+			</div>
+			<div style="width:75px; height:110px; background-color:#018c3b; float:left;">
+			
+				<span style="color:#fff; display:inline-block; font-family:calibri; font-size:38px; font-weight:semi-bold; padding-top:15px; padding-left:15px;">01 </span>
+				<span style="color:#fff; display:inline-block; font-variant:small-caps; font-family:calibri; font-size:20px; margin-top:-7px; font-weight:semi-bold;  padding-left:20px;">Jan </span>
+			
+			
+			</div>
+			<div><span style="border-bottom:2px solid #018c3b;"></span></div>
+			
+		</div>
+			
+		
+		<div style="" class="academic-event-box2">
+			<img src="img/Eid.png" style="width:235px; height:140px;">
+			<div style="background:#262626; height:40px; margin-top:-5px;">
+				<span style="color:#fff; font-weight:semi-bold; display:block; margin-left:40px; font-family:calibri; padding-top:10px;">ACADEMIC SESSION VI</span>
+			</div>
+			
+				<div style="width:160px; height:110px; background-color:#22a7f0; float:left;">
+					<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/clock-t.png" width="15" ></span>
+					<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+					8.30am to 1.00pm</span>
+					<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/location-2.png" width="15" ></span>
+					<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+					CIHS </span> 
+				<div> <a href="" class="buttonMoreBlue"><span style="position:relative; bottom:5px; left:13px; ">More Info</span></a></div>
+				
+				
+			
+			</div>
+			
+			<div style="width:75px; height:110px; background-color:#0088c8; float:left;">
+			
+				<span style="color:#fff; display:inline-block; font-family:calibri; font-size:38px; font-weight:semi-bold; padding-top:15px; padding-left:15px;">01 </span>
+				<span style="color:#fff; display:inline-block; font-variant:small-caps; font-family:calibri; font-size:20px; margin-top:-7px; font-weight:semi-bold;  padding-left:20px;">Jan </span>
+			
+			
+			</div>
+			<div><span style="border-bottom:2px solid #018c3b;"></span></div>
+			
+		
+		</div>
+		<div style="" class="academic-event-box2">
+				<img src="img/academic-event-1.png" style="width:235px; height:140px;">
+			<div style="background:#262626; height:40px; margin-top:-5px;">
+				<span style="color:#fff; font-weight:semi-bold; display:block; margin-left:40px; font-family:calibri; padding-top:10px;">ACADEMIC SESSION VI</span>
+				</div>
+			
+				<div style="width:160px; height:110px; background-color:#26a65b; float:left;">
+				<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/clock-t.png" width="15" ></span>
+				<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+				8.30am to 1.00pm</span>
+				<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/location-2.png" width="15" ></span>
+				<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+				CIHS </span> 
+				<div> <a href="" class="buttonMore"><span style="position:relative; bottom:5px; left:13px; ">More Info</span></a></div>
+				
+				
+				
+				
+					
+			</div>
+			<div style="width:75px; height:110px; background-color:#018c3b; float:left;">
+			
+				<span style="color:#fff; display:inline-block; font-family:calibri; font-size:38px; font-weight:semi-bold; padding-top:15px; padding-left:15px;">01 </span>
+				<span style="color:#fff; display:inline-block; font-variant:small-caps; font-family:calibri; font-size:20px; margin-top:-7px; font-weight:semi-bold;  padding-left:20px;">Jan </span>
+			
+			
+			</div>
+			<div><span style="border-bottom:2px solid #018c3b;"></span></div>
+		</div>
+		<div style="" class="academic-event-box2">
+				<img src="img/Eid.png" style="width:235px; height:140px;">
+			<div style="background:#262626; height:40px; margin-top:-5px;">
+				<span style="color:#fff; font-weight:semi-bold; display:block; margin-left:40px; font-family:calibri; padding-top:10px;">ACADEMIC SESSION VI</span>
+			</div>
+			
+				<div style="width:160px; height:110px; background-color:#22a7f0; float:left;">
+					<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/clock-t.png" width="15" ></span>
+					<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+					8.30am to 1.00pm</span>
+					<span style="display:inline-block;"><img style="display:; margin-top:5px; margin-left:5px; margin-right:2px" src="img/location-2.png" width="15" ></span>
+					<span style="display:inline-block; color:#fff; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+					CIHS </span> 
+				<div> <a href="" class="buttonMoreBlue"><span style="position:relative; bottom:5px; left:13px; ">More Info</span></a></div>
+				
+				
+			
+			</div>
+			
+			<div style="width:75px; height:110px; background-color:#0088c8; float:left;">
+			
+				<span style="color:#fff; display:inline-block; font-family:calibri; font-size:38px; font-weight:semi-bold; padding-top:15px; padding-left:15px;">01 </span>
+				<span style="color:#fff; display:inline-block; font-variant:small-caps; font-family:calibri; font-size:20px; margin-top:-7px; font-weight:semi-bold;  padding-left:20px;">Jan </span>
+			
+			
+			</div>
+			<div><span style="border-bottom:2px solid #018c3b;"></span></div>
+			
+		
+		</div>
+		
+		</div>
+		
+	
+	</div>
+	<div id="online-payment-img"></div>
+	<div id="online-mcq">
+	<p style="margin-left:8px; margin-top:10px; color:#807b7b; font-family: Calibri; font-size:25px; font-weight:">Online MCQ Vocabulary</p>
+		<div style="width:120px; border:2.5px solid orange; margin-left:px; margin-top:-20px;"></div>
+		<div style="width:645px; border-bottom:1px solid #ccc; margin-left:px; margin-top:px;"></div>
+		
+	<div  id="online-mcq-left">
+		<div style="margin-top:5px; font-size:18px; width:625px; height:50px; background:#262626;">
+			<div style="width:312px; height:50px; background:; font-weight:bold; font-family:calibri; float:left;">
+				<ul style=" margin-left:140px; padding:;  display:; list-style-type:disc; color:#fff;">
+					<li style="">ACADEMIC QUE</li>
+				</ul>
+			</div>
+	
+			<div style="width:312px; height:50px; background:; float:right;">
+				<ul style=" margin:; padding:; display:; font-weight:bold; font-family:calibri; list-style-type:disc; color:#fff;">
+					<li style="">EXTERNAL QUE</li>
+				</ul>
+			</div>
+			
+			
+			
+		</div>
+	<div style="background:#e75503; height:40px; width:625px; border-radius:0px 0px 3px 3px;;">
+		<span style="font-weight:semi-bold; position:relative; left:39%; top:5px; font-size:20px; font-family:calibri; color:#fff;">Choose Subject</span>
+	
+	</div>
+	
+	<div style="background:#f27935; height:200px; width:625px; border-radius:0px 0px 3px 3px; margin-top:-5px;">
+	
+	
+	</div>
+	
+	</div>
+	
+	
+	<div id="online-mcq-right">
+		<div style="margin-left:10px; margin-top:-45px; background:#; border:2px solid #485052; border-radius:5px; width:330px; height:332px;">
+			<div id="newsletter" style="">
+			<span style="font-weight:bold; font-size:28px; color:#fff; position:relative; top:5%; left:18%; ">NEWSLETTER	</span>
+			<p style="font-weight:bold; font-size:16px; color:#fff; position:relative; text-align:center; top:10%; left:; ">Sign Up to Get Latest<br> Newsletter From Your<br> School	</p>
+			<div style="position:relative; top:15%; left:19%;">
+			
+			<form action="/action_page.php">
+
+			<input style="background:#485052; text-align:center;  color:#fff; border:1px solid #ccc; width:200px; border-radius:3px; height:30px;" type="text" placeholder="Enter Your Email" name="firstname"></form></div>
+			
+			
+			<div style="position:relative; top:22%; left:35%;">
+				<form> 
+					<input style="background:#485052; border-radius:3px; text-align:center; width:100px; font-weight:semi-bold; font-size:16px; padding:5px;  color:#fff; border:1px solid #ccc;" type="submit" value="Sign Up">
+				</form>
+			</div>
+			
+			</div>
+			
+			</div>
+		
+		</div>
+		
+			
+	</div>
+	
+	
+	
+	</div>
+	
+	
+	
+	<div id="web-portal-add"></div>
+		<!--footer starts here-->
+		<div id="footer">
+		<div id="footer-first-sec">
+			<p style="margin-left:18px; margin-top:10px; color:#dbd8d8; font-family: Calibri; font-size:22px; font-weight:">External Link</p>
+		<div style="width:80px; border:2px solid #2ebe6a; margin-left:18px; margin-top:-20px;"></div>
+		<div style="width:120px; border-bottom:1px solid #9d9b9b; margin-left:18px; margin-top:px;"></div>
+		
+			<div>
+				<ul style="list-style-type:none; line-height:35px;">
+					<li><a href="#"  style="text-decoration:none; font-family:calibri; font-weight:semi-bold; color:#dedbdb;">e-book</a></li>
+					<li><a href="#"  style="text-decoration:none; font-family:calibri; color:#dedbdb;">eFF HSC</a></li>
+					<li><a href="#"  style="text-decoration:none; font-family:calibri; color:#dedbdb;">IIF & JSC</a></li>
+					<li><a href="#"  style="text-decoration:none; font-family:calibri; color:#dedbdb;">NCTB</a></li>
+					<li><a href="#"  style="text-decoration:none; font-family:calibri; color:#dedbdb;">Public Library</a></li>
+				
+				</ul>
+			
+			</div>
+		</div>
+		<div id="footer-second-sec">
+			<p style="margin-left:px; margin-top:10px; color:#dbd8d8; font-family: Calibri; font-size:22px; font-weight:">Contact Us</p>
+		<div style="width:80px; border:2px solid #22a7f0; margin-left:0px; margin-top:-20px;"></div>
+		<div style="width:120px; border-bottom:1px solid #9d9b9b; margin-left:0px; margin-top:px;"></div>
+			<div>
+				<ul style="list-style-type:none; line-height:35px; margin-left:-38px;">
+					<li><a href="#"  style="text-decoration:none; font-family:calibri; font-weight:semi-bold; color:#dedbdb;">Chittagong Ideal School & College, Baizid Bostami, Zakir Hossain Road, Chittagong 4210. </a></li>
+				</ul>
+				<span style="display:inline-block;"><img style="display:; margin-top:px; margin-left:5px; margin-right:8px" src="phone1.png" width="15" ></span>
+				<span style="display:inline-block; color:#dbd8d8; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+				031-123456</span>
+				<div>
+				<span style="display:inline-block;"><img style="display:; margin-top:15px; margin-left:5px; margin-right:8px" src="sms-box.png" width="15" ></span>
+				<span style="display:inline-block; color:#dbd8d8; font-weight:semi-bold; margin-left:px; margin-top:px; font-family:calibri;">
+				cihsctg05@gmail.com</span>
+				</div>
+			</div>
+		</div>
+		<div id="footer-third-sec">
+			<p style="margin-left:px; margin-top:10px; color:#dbd8d8; font-family: Calibri; font-size:22px; font-weight:">Our Location</p>
+		<div style="width:80px; border:2px solid #f5ab35; margin-left:0px; margin-top:-20px;"></div>
+		<div style="width:120px; border-bottom:1px solid #9d9b9b; margin-left:0px; margin-top:px;"></div>
+		<!--google map-->
+		<div id="map" style="width:200px; margin-top:20px;"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 22.3569, lng: 91.7832},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANd5Utib7NwoqfP2lPTVWTwfVzLgmPShs&callback=initMap"
+    async defer></script>
+		<!--google map-->
+		
+		
+		</div>
+		<div id="footer-fourth-sec">
+			<p style="margin-left:px; margin-top:10px; color:#dbd8d8; font-family: Calibri; font-size:22px; font-weight:">Gallery</p>
+		<div style="width:80px; border:2px solid #f27935; margin-left:0px; margin-top:-20px;"></div>
+		<div style="width:120px; border-bottom:1px solid #9d9b9b; margin-left:0px; margin-top:px;"></div>
+		
+		<!--box-img-->
+		<div id="footer-boxImg1" style=" "></div>
+		<div style=" border:1px solid #ccc; width:90px; height:85px; background:skyblue; float:left; margin-top:5px; margin-left:4px;"></div>
+		<div style=" border:1px solid #ccc; width:90px; height:85px; background:skyblue; float:left; margin-top:8px; margin-left:1px;"></div>
+		<div style=" border:1px solid #ccc; width:90px; height:85px; background:skyblue; float:left; margin-top:8px; margin-left:4px;"></div>
+		
+		
+		<!--box-img-->
+		</div                         >
+		
+		</div>
+			<div id="footer-border">
+				<div id="footer-border-left">
+				<span style="color:#ccc; display:inline-block; margin-top:10px; margin-left:8px; font-family:calibri; font-weight:semibold;">© 2018 CIHS//Powered by 
+				<span style="color:skyblue; display:inline-block; margin-top:10px; margin-left:px; font-family:calibri; font-weight:semibold;" >afrojajisha</span></span></div>
+				<div id="footer-border-right">
+				<div id="fb" style=""><a style="text-decoration:none;"  href=""><img src="img/fb.jpg"></a></div>
+				<div id="twitter" style=""><a style="text-decoration:none;"  href=""><img src="img/twitter.jpg"></a></div>
+				<div id="linkdin" style=""><a style="text-decoration:none;"  href=""><img src="img/linkedin.jpg"></a></div>
+				<div id="skype" style=""><a style="text-decoration:none;"  href=""><img src="img/skype.jpg"></a></div>
+				<div id="message" style=""><a style="text-decoration:none;"  href=""><img src="img/message.jpg"></a></div>
+				
+				</div>
+				
+			</div>
+		
+
+
+</div>
+
+</body>
+</html>
